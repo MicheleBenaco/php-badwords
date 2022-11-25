@@ -23,10 +23,12 @@ $badParola =$_GET['badParola'];
         <!-- per stampare la lunghezza devo usare eco prima di strlen -->
     <h2>E sono lungo : <?php echo strlen($nome); ?></h2>
     <h2> <?php
-    echo str_replace("$badParola","****","$badParola");
+    echo str_replace("$badParola","***","$badParola");
         ?>
     </h2>
-    <h1> <?php echo strlen($nome + $badParola ) ?></h1>
+    <h2>Noi siamo = <?php echo ($nome); echo str_replace("$badParola","***","$badParola") ?></h2>
 
+    <!-- <h1> <?php echo strlen($nome + $badParola ) ?></h1> cosi non funziona -->
+    
 </body>
 </html>
